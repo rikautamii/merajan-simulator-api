@@ -125,7 +125,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageWestSide(footLength, sideFootLength) {
+  async getImageEastSide(footLength, sideFootLength) {
     const width = 1238;
     const height = 1025;
     const canvas = createCanvas(width, height);
@@ -187,7 +187,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageEastSide(footLength, sideFootLength) {
+  async getImageWestSide(footLength, sideFootLength) {
     const width = 1238;
     const height = 1025;
     const canvas = createCanvas(width, height);
