@@ -7,7 +7,7 @@ class BaliBuildingLocation {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/wghsNj.md.png";
+    const urlImg = "https://iili.io/8hO2Rt.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -69,7 +69,7 @@ class BaliBuildingLocation {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/wgkyUN.md.png";
+    const urlImg = "https://iili.io/8hOYsj.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -131,7 +131,7 @@ class BaliBuildingLocation {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/wgUJ5B.md.png";
+    const urlImg = "https://iili.io/8hOXzg.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -193,7 +193,7 @@ class BaliBuildingLocation {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/wg8Rpt.md.png";
+    const urlImg = "https://iili.io/8hOrIn.md.png";
 
     const image = await loadImage(urlImg);
 
