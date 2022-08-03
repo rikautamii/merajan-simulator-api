@@ -3,11 +3,11 @@ const { loadImage, createCanvas } = require("canvas");
 class BaliBuildingLocation {
   async getImageNorthSide(footLength, sideFootLength) {
     const width = 1238;
-    const height = 1025;
+    const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/S04nZN.md.png";
+    const urlImg = "https://iili.io/SLcpn9.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -20,42 +20,42 @@ class BaliBuildingLocation {
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       570,
-      290
+      330
     );
 
     // bale daje -> bale dangin
     context.fillText(
       `${((10 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       450,
-      400
+      440
     );
 
     // bale daje -> bale kelod
     context.fillText(
       `${((33 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       420,
-      480
+      520
     );
 
     // bale kauh -> bale kangin
     context.fillText(
       `${((36 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       480,
-      540
+      580
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((6 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       260,
-      820
+      860
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       280,
-      920
+      960
     );
 
     const imgBuffer = canvas.toBuffer("image/png");
@@ -65,11 +65,11 @@ class BaliBuildingLocation {
 
   async getImageSouthSide(footLength, sideFootLength) {
     const width = 1238;
-    const height = 1025;
+    const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/S04R8G.md.png";
+    const urlImg = "https://iili.io/SLcyGe.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -126,12 +126,12 @@ class BaliBuildingLocation {
   }
 
   async getImageEastSide(footLength, sideFootLength) {
-    const width = 1238;
-    const height = 1025;
+    const width = 1406;
+    const height = 900;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/S04Yu4.md.png";
+    const urlImg = "https://iili.io/SLl96u.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -143,43 +143,43 @@ class BaliBuildingLocation {
     // merajan -> bale daja
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      510,
-      185
+      560,
+      160
     );
 
     // bale daje -> bale dangin
     context.fillText(
       `${((10 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      410,
-      320
+      450,
+      280
     );
 
     // bale daje -> bale kelod
     context.fillText(
       `${((33 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      380,
-      410
+      420,
+      360
     );
 
     // bale kauh -> bale kangin
     context.fillText(
       `${((36 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      450,
-      480
+      490,
+      420
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((6 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      235,
-      795
+      260,
+      690
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      250,
-      910
+      280,
+      790
     );
 
     const imgBuffer = canvas.toBuffer("image/png");
@@ -188,12 +188,12 @@ class BaliBuildingLocation {
   }
 
   async getImageWestSide(footLength, sideFootLength) {
-    const width = 1238;
-    const height = 1025;
+    const width = 1406;
+    const height = 900;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
-    const urlImg = "https://iili.io/S04ct2.md.png";
+    const urlImg = "https://iili.io/SLlJ3b.md.png";
 
     const image = await loadImage(urlImg);
 
@@ -205,43 +205,43 @@ class BaliBuildingLocation {
     // merajan -> bale daja
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      620,
-      185
+      730,
+      160
     );
 
     // bale daje -> bale dangin
     context.fillText(
       `${((10 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      520,
-      320
+      620,
+      280
     );
 
     // bale daje -> bale kelod
     context.fillText(
       `${((33 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      490,
-      410
+      590,
+      360
     );
 
     // bale kauh -> bale kangin
     context.fillText(
       `${((36 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      560,
-      480
+      660,
+      420
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((6 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      345,
-      795
+      430,
+      690
     );
 
     // bale kelod -> dapur
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      360,
-      910
+      450,
+      790
     );
 
     const imgBuffer = canvas.toBuffer("image/png");
