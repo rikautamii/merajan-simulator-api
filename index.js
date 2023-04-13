@@ -23,9 +23,6 @@ app.use((req, res, next) => {
 });
 
 // routes
-app.use("/", (req, res) => {
-  res.json({ message: "Bali Building Simulator API" });
-});
 app.use("/api/landDirection", landDirectionRoutes);
 app.use("/api/locationDoor", locationDoorRoutes);
 app.use("/api/buildingLocation", buildingLocationRoutes);
