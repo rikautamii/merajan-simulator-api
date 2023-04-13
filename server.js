@@ -1,5 +1,5 @@
 const express = require("express");
-const port = process.env.PORT || 4000;
+const port = 9000;
 const cors = require("cors");
 const landDirectionRoutes = require("./routes/landDirection");
 const locationDoorRoutes = require("./routes/locationDoor");
@@ -23,6 +23,9 @@ app.use((req, res, next) => {
 });
 
 // routes
+app.use("/", (req, res) => {
+  res.json({ message: "Bali Building Simulator API" });
+});
 app.use("/api/landDirection", landDirectionRoutes);
 app.use("/api/locationDoor", locationDoorRoutes);
 app.use("/api/buildingLocation", buildingLocationRoutes);
