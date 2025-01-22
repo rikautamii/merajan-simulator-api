@@ -14,3 +14,4 @@ const getLocationDoor = async (req, res) => {
 module.exports = {
   getLocationDoor,
 };
+

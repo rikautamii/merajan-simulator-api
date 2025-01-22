@@ -4,9 +4,12 @@ const cors = require("cors");
 const landDirectionRoutes = require("./routes/landDirection");
 const locationDoorRoutes = require("./routes/locationDoor");
 const buildingLocationRoutes = require("./routes/buildingLocation");
+const path = require("path");
 
 // express app
 const app = express();
+
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use(
   cors({
@@ -23,7 +26,6 @@ app.use((req, res, next) => {
 });
 
 // routes
-app.use("/api/landDirection", landDirectionRoutes);
 app.use("/api/locationDoor", locationDoorRoutes);
 app.use("/api/buildingLocation", buildingLocationRoutes);
 
