@@ -1,7 +1,6 @@
 const express = require("express");
 const port = 9000;
 const cors = require("cors");
-const landDirectionRoutes = require("./routes/landDirection");
 const locationDoorRoutes = require("./routes/locationDoor");
 const buildingLocationRoutes = require("./routes/buildingLocation");
 const path = require("path");
