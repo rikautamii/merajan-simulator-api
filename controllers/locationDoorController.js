@@ -3,13 +3,11 @@ const LocationDoor = require("../models/BaliLocationOfDoor");
 const getLocationDoor = async (req, res) => {
   const { yardLength, landDirection } = req.body;
   let url = "";
-  const hostname = req.hostname;
-  const protocol = req.protocol;
 
-  if (hostname === "localhost") {
-    url = `${protocol}://${hostname}:9000`;
+  if (process.env.NODE_ENV === "production") {
+    url = `https://bali-building-simulator-api-7n41.vercel.app`;
   } else {
-    url = `${protocol}://${hostname}`;
+    url = `http://localhost:9000`;
   }
 
   const locationDoor = await LocationDoor.getLocationOfDoor(

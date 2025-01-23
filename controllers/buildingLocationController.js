@@ -4,13 +4,11 @@ const getBuildingLocation = async (req, res) => {
   const { landDirection, footLength, sideFootLength, BaliOrientation } =
     req.body;
   let url = "";
-  const hostname = req.hostname;
-  const protocol = req.protocol;
 
-  if (hostname === "localhost") {
-    url = `${protocol}://${hostname}:9000`;
+  if (process.env.NODE_ENV === "production") {
+    url = `https://bali-building-simulator-api-7n41.vercel.app`;
   } else {
-    url = `${protocol}://${hostname}`;
+    url = `http://localhost:9000`;
   }
 
   const buildingLocation = await BuildingLocation.getBuildingLocation(
