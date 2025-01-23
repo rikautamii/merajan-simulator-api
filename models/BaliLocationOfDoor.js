@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
 
 class BaliLocationOfDoor {
