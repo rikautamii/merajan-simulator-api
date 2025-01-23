@@ -1,4 +1,4 @@
-const { loadImage, createCanvas } = require("canvas");
+const { loadImage, createCanvas } = require("@napi-rs/canvas");
 
 class BaliBuildingLocation {
   async getImageNorthSide(footLength, sideFootLength) {
@@ -6,7 +6,6 @@ class BaliBuildingLocation {
     const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
-
 
     let urlImg = "/images/tataUtara.png";
     const image = await loadImage(`http://localhost:9000${urlImg}`);
@@ -87,7 +86,6 @@ class BaliBuildingLocation {
       180
     );
 
-
     const imgBuffer = canvas.toBuffer("image/png");
 
     return imgBuffer.toString("base64");
@@ -98,7 +96,6 @@ class BaliBuildingLocation {
     const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
-
 
     let urlImg = "/images/tataUtaraBU.png";
     const image = await loadImage(`http://localhost:9000${urlImg}`);
@@ -179,7 +176,6 @@ class BaliBuildingLocation {
       1040
     );
 
-
     const imgBuffer = canvas.toBuffer("image/png");
 
     return imgBuffer.toString("base64");
@@ -218,7 +214,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       420,
-      360 
+      360
     );
 
     // bale kauh -> bale kangin : Sri
@@ -308,7 +304,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       420,
-      360 
+      360
     );
 
     // bale kauh -> bale kangin : Sri
@@ -424,7 +420,7 @@ class BaliBuildingLocation {
 
     // bale daje -> bale kelod : Rudra
     context.fillText(
-      `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,  
+      `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       420,
       360
     );
@@ -514,7 +510,7 @@ class BaliBuildingLocation {
 
     // bale daje -> bale kelod : Rudra
     context.fillText(
-      `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,  
+      `${((29 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       410,
       360
     );
@@ -725,10 +721,18 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getBuildingLocation(direction, footLength, sideFootLength, orientation) {
+  async getBuildingLocation(
+    direction,
+    footLength,
+    sideFootLength,
+    orientation
+  ) {
     if (direction == "utara" && orientation == "baliutara") {
       return {
-        bytesImg: await this.getImageNorthSideNorthBali(footLength, sideFootLength),
+        bytesImg: await this.getImageNorthSideNorthBali(
+          footLength,
+          sideFootLength
+        ),
       };
     } else if (direction == "utara" && orientation == "baliselatan") {
       return {
@@ -736,7 +740,10 @@ class BaliBuildingLocation {
       };
     } else if (direction == "timur" && orientation == "baliutara") {
       return {
-        bytesImg: await this.getImageEastSideNorthBali(footLength, sideFootLength),
+        bytesImg: await this.getImageEastSideNorthBali(
+          footLength,
+          sideFootLength
+        ),
       };
     } else if (direction == "timur" && orientation == "baliselatan") {
       return {
@@ -744,7 +751,10 @@ class BaliBuildingLocation {
       };
     } else if (direction == "barat" && orientation == "baliutara") {
       return {
-        bytesImg: await this.getImageWestSideNorthBali(footLength, sideFootLength),
+        bytesImg: await this.getImageWestSideNorthBali(
+          footLength,
+          sideFootLength
+        ),
       };
     } else if (direction == "barat" && orientation == "baliselatan") {
       return {
@@ -752,7 +762,10 @@ class BaliBuildingLocation {
       };
     } else if (direction == "selatan" && orientation == "baliutara") {
       return {
-        bytesImg: await this.getImageSouthSideNorthBali(footLength, sideFootLength),
+        bytesImg: await this.getImageSouthSideNorthBali(
+          footLength,
+          sideFootLength
+        ),
       };
     } else {
       return {

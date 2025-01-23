@@ -8,7 +8,7 @@ const path = require("path");
 // express app
 const app = express();
 
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(
   cors({
