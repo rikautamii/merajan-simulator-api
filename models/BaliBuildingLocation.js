@@ -1,4 +1,9 @@
-const { loadImage, createCanvas } = require("@napi-rs/canvas");
+const { loadImage, createCanvas, GlobalFonts } = require("@napi-rs/canvas");
+
+GlobalFonts.registerFromPath(
+  require("@canvas-fonts/helveticaneue"),
+  "Helvetica"
+);
 
 class BaliBuildingLocation {
   async getImageNorthSide(footLength, sideFootLength, url) {

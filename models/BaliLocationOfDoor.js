@@ -1,4 +1,9 @@
-const { loadImage, createCanvas } = require("@napi-rs/canvas");
+const { loadImage, createCanvas, GlobalFonts } = require("@napi-rs/canvas");
+
+GlobalFonts.registerFromPath(
+  require("@canvas-fonts/helveticaneue"),
+  "Helvetica"
+);
 
 class BaliLocationOfDoor {
   getPhilosophy(direction) {
@@ -227,7 +232,7 @@ class BaliLocationOfDoor {
     let x, y;
     const text = `${length.toFixed(1)} m`;
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     switch (direction) {
       case "utara":
