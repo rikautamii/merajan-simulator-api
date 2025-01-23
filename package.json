@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@canvas-fonts/helveticaneue": "^1.0.4",
     "@napi-rs/canvas": "^0.1.65",
     "cors": "^2.8.5",
     "express": "^4.18.1"
