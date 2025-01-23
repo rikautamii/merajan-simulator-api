@@ -19,7 +19,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -109,7 +109,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -199,7 +199,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -289,7 +289,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -379,7 +379,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -469,7 +469,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -559,7 +559,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
@@ -649,7 +649,7 @@ class BaliBuildingLocation {
     context.drawImage(image, 0, 0, width, height);
 
     context.fillStyle = "#000000";
-    context.font = "bold 16pt Menlo";
+    context.font = "bold 16pt Helvetica";
 
     // merajan -> bale daja : Guru
     context.fillText(
