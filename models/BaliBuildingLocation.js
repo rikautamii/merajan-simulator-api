@@ -1,14 +1,14 @@
 const { loadImage, createCanvas } = require("@napi-rs/canvas");
 
 class BaliBuildingLocation {
-  async getImageNorthSide(footLength, sideFootLength) {
+  async getImageNorthSide(footLength, sideFootLength, url) {
     const width = 1238;
     const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataUtara.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -91,14 +91,14 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageNorthSideNorthBali(footLength, sideFootLength) {
+  async getImageNorthSideNorthBali(footLength, sideFootLength, url) {
     const width = 1238;
     const height = 1068;
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataUtaraBU.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -188,7 +188,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataSelatan.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -278,7 +278,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataSelatanBU.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -368,7 +368,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataTimur.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -458,7 +458,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataTimurBU.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -548,7 +548,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataBarat.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -638,7 +638,7 @@ class BaliBuildingLocation {
     const context = canvas.getContext("2d");
 
     let urlImg = "/images/tataBaratBU.png";
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(image, 0, 0, width, height);
@@ -725,51 +725,56 @@ class BaliBuildingLocation {
     direction,
     footLength,
     sideFootLength,
-    orientation
+    orientation,
+    url
   ) {
     if (direction == "utara" && orientation == "baliutara") {
       return {
         bytesImg: await this.getImageNorthSideNorthBali(
           footLength,
-          sideFootLength
+          sideFootLength,
+          url
         ),
       };
     } else if (direction == "utara" && orientation == "baliselatan") {
       return {
-        bytesImg: await this.getImageNorthSide(footLength, sideFootLength),
+        bytesImg: await this.getImageNorthSide(footLength, sideFootLength, url),
       };
     } else if (direction == "timur" && orientation == "baliutara") {
       return {
         bytesImg: await this.getImageEastSideNorthBali(
           footLength,
-          sideFootLength
+          sideFootLength,
+          url
         ),
       };
     } else if (direction == "timur" && orientation == "baliselatan") {
       return {
-        bytesImg: await this.getImageEastSide(footLength, sideFootLength),
+        bytesImg: await this.getImageEastSide(footLength, sideFootLength, url),
       };
     } else if (direction == "barat" && orientation == "baliutara") {
       return {
         bytesImg: await this.getImageWestSideNorthBali(
           footLength,
-          sideFootLength
+          sideFootLength,
+          url
         ),
       };
     } else if (direction == "barat" && orientation == "baliselatan") {
       return {
-        bytesImg: await this.getImageWestSide(footLength, sideFootLength),
+        bytesImg: await this.getImageWestSide(footLength, sideFootLength, url),
       };
     } else if (direction == "selatan" && orientation == "baliutara") {
       return {
         bytesImg: await this.getImageSouthSideNorthBali(
           footLength,
-          sideFootLength
+          sideFootLength,
+          url
         ),
       };
     } else {
       return {
-        bytesImg: await this.getImageSouthSide(footLength, sideFootLength),
+        bytesImg: await this.getImageSouthSide(footLength, sideFootLength, url),
       };
     }
   }

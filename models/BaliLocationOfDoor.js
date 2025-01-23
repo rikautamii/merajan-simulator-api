@@ -198,7 +198,7 @@ class BaliLocationOfDoor {
     }
   }
 
-  async getBytesImage(length, direction) {
+  async getBytesImage(length, direction, url) {
     const width = 856;
     const height = 994;
     const canvas = createCanvas(width, height);
@@ -221,7 +221,7 @@ class BaliLocationOfDoor {
     }
 
     // Load image dari path static backend
-    const image = await loadImage(`http://localhost:9000${urlImg}`);
+    const image = await loadImage(`${url}${urlImg}`);
 
     context.drawImage(image, 0, 0, width, height);
     let x, y;
@@ -327,11 +327,11 @@ class BaliLocationOfDoor {
     return imgBuffer.toString("base64");
   }
 
-  async getLocationOfDoor(yardLength, homeDirection) {
+  async getLocationOfDoor(yardLength, homeDirection, url) {
     let length = yardLength / 9;
 
     return {
-      bytesImg: await this.getBytesImage(length, homeDirection),
+      bytesImg: await this.getBytesImage(length, homeDirection, url),
       philosophy: this.getPhilosophy(homeDirection),
     };
   }
