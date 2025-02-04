@@ -186,7 +186,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageSouthSide(footLength, sideFootLength) {
+  async getImageSouthSide(footLength, sideFootLength, url) {
     const width = 1238;
     const height = 1068;
     const canvas = createCanvas(width, height);
@@ -276,7 +276,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageSouthSideNorthBali(footLength, sideFootLength) {
+  async getImageSouthSideNorthBali(footLength, sideFootLength, url) {
     const width = 1238;
     const height = 1068;
     const canvas = createCanvas(width, height);
@@ -366,7 +366,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageEastSide(footLength, sideFootLength) {
+  async getImageEastSide(footLength, sideFootLength, url) {
     const width = 1406;
     const height = 900;
     const canvas = createCanvas(width, height);
@@ -456,7 +456,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageEastSideNorthBali(footLength, sideFootLength) {
+  async getImageEastSideNorthBali(footLength, sideFootLength, url) {
     const width = 1406;
     const height = 900;
     const canvas = createCanvas(width, height);
@@ -546,7 +546,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageWestSide(footLength, sideFootLength) {
+  async getImageWestSide(footLength, sideFootLength, url) {
     const width = 1406;
     const height = 900;
     const canvas = createCanvas(width, height);
@@ -636,7 +636,7 @@ class BaliBuildingLocation {
     return imgBuffer.toString("base64");
   }
 
-  async getImageWestSideNorthBali(footLength, sideFootLength) {
+  async getImageWestSideNorthBali(footLength, sideFootLength, url) {
     const width = 1406;
     const height = 900;
     const canvas = createCanvas(width, height);
