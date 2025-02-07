@@ -1,7 +1,7 @@
 const BuildingLocation = require("../models/BaliBuildingLocation");
 
 const getBuildingLocation = async (req, res) => {
-  const { landDirection, footLength, sideFootLength, BaliOrientation } =
+  const { landDirection, footLength, sideFootLength, BaliOrientation, landLength, landWidth } =
     req.body;
   let url = "";
 
@@ -16,6 +16,8 @@ const getBuildingLocation = async (req, res) => {
     footLength,
     sideFootLength,
     BaliOrientation,
+    landLength,
+    landWidth,
     url
   );
 
