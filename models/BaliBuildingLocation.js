@@ -2182,13 +2182,13 @@ class BaliBuildingLocation {
     url
   ) {
     if (
-      ["utara", "selatan", "timur", "barat"].includes(direction) &&
+      ["north", "south", "east", "west"].includes(direction) &&
       ["baliutara", "baliselatan"].includes(orientation) &&
       landLength < 10 &&
       landWidth < 10
     ) {
       return { error: "Luas tanah minimal 10m x 10m" }; }
-    else if (direction == "utara" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    else if (direction == "north" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageNorthSideNorthBali1(
           footLength,
@@ -2198,7 +2198,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "utara" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "north" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageNorthSideNorthBali2(
           footLength,
@@ -2208,7 +2208,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "utara" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "north" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageNorthSideNorthBali3(
           footLength,
@@ -2218,19 +2218,19 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "utara" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "north" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageNorthSide1(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "utara" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "north" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageNorthSide2(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "utara" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "north" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageNorthSide3(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "timur" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "east" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageEastSideNorthBali1(
           footLength,
@@ -2240,7 +2240,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "timur" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "east" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageEastSideNorthBali2(
           footLength,
@@ -2250,7 +2250,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "timur" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "east" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageEastSideNorthBali3(
           footLength,
@@ -2260,19 +2260,19 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "timur" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "east" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageEastSide1(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "timur" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "east" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageEastSide2(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "timur" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "east" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageEastSide3(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "barat" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "west" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageWestSideNorthBali1(
           footLength,
@@ -2282,7 +2282,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "barat" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "west" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageWestSideNorthBali2(
           footLength,
@@ -2292,7 +2292,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "barat" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "west" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageWestSideNorthBali3(
           footLength,
@@ -2302,19 +2302,19 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "barat" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "west" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageWestSide1(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "barat" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "west" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageWestSide2(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "barat" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "west" && orientation == "baliselatan" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageWestSide3(footLength, sideFootLength, landLength, landWidth, url),
       };
-    } else if (direction == "selatan" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "south" && orientation == "baliutara" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageSouthSideNorthBali1(
           footLength,
@@ -2324,7 +2324,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "selatan" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    } else if (direction == "south" && orientation == "baliutara" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageSouthSideNorthBali2(
           footLength,
@@ -2334,7 +2334,7 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "selatan" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
+    } else if (direction == "south" && orientation == "baliutara" && landLength >= 17 && landLength <= 1000 && landWidth >= 17 && landWidth <= 1000) {
       return {
         bytesImg: await this.getImageSouthSideNorthBali3(
           footLength,
@@ -2344,12 +2344,12 @@ class BaliBuildingLocation {
           url
         ),
       };
-    } else if (direction == "selatan" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
+    } else if (direction == "south" && orientation == "baliselatan" && landLength >= 10 && landLength <= 12 && landWidth >= 10 && landWidth <= 12) {
       return {
         bytesImg: await this.getImageSouthSide1(footLength, sideFootLength, landLength, landWidth, url),
       };
     }
-    else if (direction == "selatan" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
+    else if (direction == "south" && orientation == "baliselatan" && landLength >= 13 && landLength <= 16 && landWidth >= 13 && landWidth <= 16) {
       return {
         bytesImg: await this.getImageSouthSide2(footLength, sideFootLength, landLength, landWidth, url),
       };
