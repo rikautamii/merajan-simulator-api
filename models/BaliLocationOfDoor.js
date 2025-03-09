@@ -162,7 +162,7 @@ class BaliLocationOfDoor {
           2: {
             bhsBali: "Musuh Makweh ",
             bhsIndonesia: "many enemies",
-            locationValue: "sangat good",
+            locationValue: "not good",
           },
           3: {
             bhsBali: "Werdhi Mas",
