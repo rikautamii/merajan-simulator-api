@@ -25,7 +25,7 @@ class BaliBuildingLocation {
     const jarak = ((3 * footLength + sideFootLength) / 100).toFixed(1) + " m";
     context.fillText(
       jarak,
-      630,
+      650,
       280
     );
 
@@ -117,7 +117,7 @@ class BaliBuildingLocation {
     const jarak = ((11 * footLength + sideFootLength) / 100).toFixed(1) + " m";    
     context.fillText(
       jarak,
-      630,
+      650,
       280
     );
 
@@ -209,7 +209,7 @@ class BaliBuildingLocation {
     const jarak = ((19 * footLength + sideFootLength) / 100).toFixed(1) + " m";    
     context.fillText(
       jarak,
-      630,
+      650,
       280
     );
 
@@ -322,7 +322,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       480,
-      600
+      580
     );
 
     // bale daja -> tembok : Uma
@@ -412,7 +412,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((17 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       480,
-      600
+      580
     );
 
     // bale daja -> tembok : Uma
@@ -502,7 +502,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((25 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       480,
-      600
+      580
     );
 
     // bale daja -> tembok : Uma
@@ -570,8 +570,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      220
+      670,
+      190
     );
 
     // bale daja -> tembok : Uma
@@ -660,8 +660,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      220
+      670,
+      190
     );
 
     // bale daja -> tembok : Uma
@@ -750,8 +750,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      220
+      670,
+      190
     );
 
     // bale daja -> tembok : Uma
@@ -840,7 +840,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      640,
+      650,
       720
     );
 
@@ -930,7 +930,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      640,
+      650,
       720
     );
 
@@ -1020,7 +1020,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      640,
+      650,
       720
     );
 
@@ -1110,8 +1110,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      630,
-      170
+      640,
+      150
     );
 
     // bale daja -> tembok : Uma
@@ -1160,7 +1160,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       560,
-      410
+      400
     );
 
     // penunggun karang -> tembok : Kala
@@ -1200,8 +1200,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      630,
-      170
+      640,
+      150
     );
 
     // bale daja -> tembok : Uma
@@ -1250,7 +1250,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((17 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       560,
-      410
+      400
     );
 
     // penunggun karang -> tembok : Kala
@@ -1290,8 +1290,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      630,
-      170
+      640,
+      150
     );
 
     // bale daja -> tembok : Uma
@@ -1340,7 +1340,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((25 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       560,
-      410
+      400
     );
 
     // penunggun karang -> tembok : Kala
@@ -1380,8 +1380,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      710
+      660,
+      690
     );
 
     // bale daja -> tembok : Uma
@@ -1430,7 +1430,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((9 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       470,
-      450
+      440
     );
 
     // penunggun karang -> tembok : Kala
@@ -1470,8 +1470,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      710
+      660,
+      690
     );
 
     // bale daja -> tembok : Uma
@@ -1520,7 +1520,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((17 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       470,
-      450
+      440
     );
 
     // penunggun karang -> tembok : Kala
@@ -1560,8 +1560,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      650,
-      710
+      660,
+      690
     );
 
     // bale daja -> tembok : Uma
@@ -1610,7 +1610,7 @@ class BaliBuildingLocation {
     context.fillText(
       `${((25 * footLength + sideFootLength) / 100).toFixed(1)} m`,
       470,
-      450
+      440
     );
 
     // penunggun karang -> tembok : Kala
@@ -1650,8 +1650,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      955,
-      170
+      965,
+      140
     );
 
     // bale daja -> tembok : Uma
@@ -1740,8 +1740,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      955,
-      170
+      965,
+      140
     );
 
     // bale daja -> tembok : Uma
@@ -1830,8 +1830,8 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      955,
-      170
+      965,
+      140
     );
 
     // bale daja -> tembok : Uma
@@ -1920,7 +1920,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((3 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      960,
+      970,
       650
     );
 
@@ -2010,7 +2010,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((11 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      960,
+      970,
       650
     );
 
@@ -2100,7 +2100,7 @@ class BaliBuildingLocation {
     // merajan -> bale daja : Guru
     context.fillText(
       `${((19 * footLength + sideFootLength) / 100).toFixed(1)} m`,
-      960,
+      970,
       650
     );
 
