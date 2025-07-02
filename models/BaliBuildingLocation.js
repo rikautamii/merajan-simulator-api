@@ -869,7 +869,7 @@ class BaliBuildingLocation {
       )
     ) {
       return { error: "Ukuran lahan tidak valid. Lahan harus memiliki ukuran minimal 6x7 atau 7x6, dan tidak diperbolehkan memiliki panjang dan lebar yang sama." }; }
-    else if (sanggah == "satu" && ((panjang >= 6 && lebar >= 7) || (panjang >= 7 && lebar >= 6)) && ((panjang < 10 && lebar < 11) || (panjang < 11 && lebar < 10))) {
+    else if (sanggah == "satu" && (panjang*lebar >= 42)  && (panjang*lebar < 110)) {
       return {
         bytesImg: await this.getImageNorthSide1(
           sanggah,
@@ -881,7 +881,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "satu" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang <= 12 && lebar <= 13) || (panjang <= 13 && lebar <= 12))) {
+    else if (sanggah == "satu" && (panjang*lebar >= 110)  && (panjang*lebar < 156)) {
       return {
         bytesImg: await this.getImageNorthSide15(
           sanggah,
@@ -893,7 +893,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "satu" && ((panjang >= 12 && lebar >= 13) || (panjang >= 13 && lebar >= 12)) && (panjang < 100 && lebar < 100)) {
+    else if (sanggah == "satu" && (panjang*lebar >= 156)  && (panjang*lebar < 500)) {
       return {
         bytesImg: await this.getImageNorthSide17(
           sanggah,
@@ -905,7 +905,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "dua" && ((panjang >= 6 && lebar >= 7) || (panjang >= 7 && lebar >= 6)) && ((panjang < 10 && lebar < 11) || (panjang < 11 && lebar < 10))) {
+    else if (sanggah == "dua" && (panjang*lebar >= 42)  && (panjang*lebar < 110)) {
       return {
         bytesImg: await this.getImageNorthSide2(
           sanggah,
@@ -917,7 +917,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "dua" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang < 12 && lebar < 13) || (panjang < 13 && lebar < 12))) {
+    else if (sanggah == "dua" && (panjang*lebar >= 110)  && (panjang*lebar < 156)) {
       return {
         bytesImg: await this.getImageNorthSide25(
           sanggah,
@@ -929,7 +929,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "dua" && ((panjang >= 12 && lebar >= 13) || (panjang >= 13 && lebar >= 12)) && (panjang < 100 && lebar < 100)) {
+    else if (sanggah == "dua" && (panjang*lebar >= 156)  && (panjang*lebar < 500)) {
       return {
         bytesImg: await this.getImageNorthSide27(
           sanggah,
@@ -941,7 +941,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "tiga" && ((panjang >= 6 && lebar >= 7) || (panjang >= 7 && lebar >= 6)) && ((panjang < 10 && lebar < 11) || (panjang < 11 && lebar < 10))) {
+    else if (sanggah == "tiga" && (panjang*lebar >= 42)  && (panjang*lebar < 110)) {
       return {
         bytesImg: await this.getImageNorthSide3(
           sanggah,
@@ -953,7 +953,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "tiga" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang < 12 && lebar < 13) || (panjang < 13 && lebar < 12))) {
+    else if (sanggah == "tiga" && (panjang*lebar >= 110)  && (panjang*lebar < 156)) {
       return {
         bytesImg: await this.getImageNorthSide35(
           sanggah,
@@ -965,7 +965,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "tiga" && ((panjang >= 12 && lebar >= 13) || (panjang >= 13 && lebar >= 12)) && (panjang < 100 && lebar < 100)) {
+    else if (sanggah == "tiga" && (panjang*lebar >= 156)  && (panjang*lebar < 500)) {
       return {
         bytesImg: await this.getImageNorthSide37(
           sanggah,
@@ -977,7 +977,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "empat" && ((panjang >= 6 && lebar >= 7) || (panjang >= 7 && lebar >= 6)) && ((panjang < 10 && lebar < 11) || (panjang < 11 && lebar < 10))) {
+    else if (sanggah == "empat" && (panjang*lebar >= 42)  && (panjang*lebar < 110)) {
       return {
         bytesImg: await this.getImageNorthSide4(
           sanggah,
@@ -989,7 +989,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "empat" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang < 12 && lebar < 13) || (panjang < 13 && lebar < 12))) {
+    else if (sanggah == "empat" && (panjang*lebar >= 110)  && (panjang*lebar < 156)) {
       return {
         bytesImg: await this.getImageNorthSide45(
           sanggah,
@@ -1001,7 +1001,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "empat" && ((panjang >= 12 && lebar >= 13) || (panjang >= 13 && lebar >= 12)) && (panjang < 100 && lebar < 100)) {
+    else if (sanggah == "empat" && (panjang*lebar >= 156)  && (panjang*lebar < 500)) {
       return {
         bytesImg: await this.getImageNorthSide47(
           sanggah,
@@ -1013,7 +1013,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "lima" && ((panjang >= 6 && lebar >= 7) || (panjang >= 7 && lebar >= 6)) && ((panjang < 10 && lebar < 11) || (panjang < 11 && lebar < 10))) {
+    else if (sanggah == "lima" && (panjang*lebar >= 42)  && (panjang*lebar < 110)) {
       return {
         bytesImg: await this.getImageNorthSide5(
           sanggah,
@@ -1025,7 +1025,7 @@ class BaliBuildingLocation {
         ),
       };
     }
-    else if (sanggah == "lima" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang < 12 && lebar < 13) || (panjang < 13 && lebar < 12))) {
+    else if (sanggah == "lima" && (panjang*lebar >= 110)  && (panjang*lebar < 156)) {
       return {
         bytesImg: await this.getImageNorthSide55(
           sanggah,
@@ -1037,7 +1037,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "lima" && ((panjang >= 12 && lebar >= 13) || (panjang >= 13 && lebar >= 12)) && (panjang < 100 && lebar < 100)) {
+    else if (sanggah == "lima" && (panjang*lebar >= 156)  && (panjang*lebar < 500)) {
       return {
         bytesImg: await this.getImageNorthSide57(
           sanggah,
