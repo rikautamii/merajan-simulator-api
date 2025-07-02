@@ -881,7 +881,7 @@ class BaliBuildingLocation {
         ),
       };
     } 
-    else if (sanggah == "satu" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang < 12 && lebar < 13) || (panjang < 13 && lebar < 12))) {
+    else if (sanggah == "satu" && ((panjang >= 10 && lebar >= 11) || (panjang >= 11 && lebar >= 10)) && ((panjang <= 12 && lebar <= 13) || (panjang <= 13 && lebar <= 12))) {
       return {
         bytesImg: await this.getImageNorthSide15(
           sanggah,
