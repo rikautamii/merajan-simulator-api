@@ -1,23 +1,23 @@
 const BuildingLocation = require("../models/BaliBuildingLocation");
 
 const getBuildingLocation = async (req, res) => {
-  const { landDirection, footLength, sideFootLength, BaliOrientation, landLength, landWidth } =
+  const { sanggah, alengkat, atebah, panjang, lebar } =
     req.body;
   let url = "";
 
   if (process.env.NODE_ENV === "production") {
-    url = `https://bali-building-simulator-api-7n41.vercel.app`;
+    // url = `https://bali-building-simulator-api-7n41.vercel.app`;
+    url = `http://localhost:9000`;
   } else {
     url = `http://localhost:9000`;
   }
 
   const buildingLocation = await BuildingLocation.getBuildingLocation(
-    landDirection,
-    footLength,
-    sideFootLength,
-    BaliOrientation,
-    landLength,
-    landWidth,
+    sanggah,
+    alengkat,
+    atebah,
+    panjang,
+    lebar,
     url
   );
 

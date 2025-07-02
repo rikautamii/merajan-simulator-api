@@ -1,8 +1,8 @@
-const express = require("express");
-const { getLocationDoor } = require("../controllers/locationDoorController");
+// const express = require("express");
+// const { getLocationDoor } = require("../controllers/locationDoorController");
 
-const router = express.Router();
+// const router = express.Router();
 
-router.post("/", getLocationDoor);
+// router.post("/", getLocationDoor);
 
-module.exports = router;
+// module.exports = router;

@@ -1,7 +1,7 @@
 const express = require("express");
 const port = 9000;
 const cors = require("cors");
-const locationDoorRoutes = require("./routes/locationDoor");
+// const locationDoorRoutes = require("./routes/locationDoor");
 const buildingLocationRoutes = require("./routes/buildingLocation");
 const path = require("path");
 
@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 });
 
 // routes
-app.use("/api/locationDoor", locationDoorRoutes);
+// app.use("/api/locationDoor", locationDoorRoutes);
 app.use("/api/buildingLocation", buildingLocationRoutes);
 
 // listen for request
